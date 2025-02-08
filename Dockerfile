@@ -3,7 +3,7 @@ FROM openjdk:11-ea-17-jre-slim
 # Set the working directory inside the container
 WORKDIR /app
 
-COPY /home/jenkins/workspace/java-app/target/**.jar /app/app.jar
+COPY target/*.jar /app/app.jar
 
 # Expose port if your app requires it (optional)
 EXPOSE 8080
