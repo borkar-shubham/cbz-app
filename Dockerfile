@@ -3,7 +3,7 @@ FROM openjdk:11-ea-17-jre-slim
 # Set the working directory inside the container
 WORKDIR /app
 
-COPY */**.jre /app/app.jre
+COPY target/**.jre /app/app.jre
 
 # Expose port if your app requires it (optional)
 EXPOSE 8080
